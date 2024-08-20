@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { InvitationComponent } from './invitation/invitation.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [InvitationComponent], // Include the standalone component here
 })
-export class AppComponent {
-  title = 'party-invitation-app';
-}
+export class AppComponent {}
